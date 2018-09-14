@@ -76,7 +76,7 @@ def tcp_send_file_ex(conn, filename, buffer_size = 4096):
     return nbytes
         
 
-def tcp_recv_file(conn, local_filename, file_size, buffer_size = 1024, is_encrypt = False):
+def tcp_recv_file(conn, local_filename, file_size, is_encrypt = False, buffer_size = 1024,):
     '''
     Receive file from server, fragmented it while receiving and write to disk.
     arguments:
